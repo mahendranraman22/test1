@@ -19,7 +19,7 @@ pipeline {
                sh '''
             #!/bin/bash
             echo "hello world"
-            sleep 2m
+            sleep 40h
          '''
             }
         }
@@ -29,7 +29,7 @@ pipeline {
                 sh '''
             #!/bin/bash
             echo "hello world"
-            sleep 5m
+            sleep 1d
          '''
             }
         }
