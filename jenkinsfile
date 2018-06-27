@@ -9,7 +9,7 @@ pipeline {
             sh '''
             #!/bin/bash
             echo "hello world"
-            echo "$HOSTNAME"
+            $HOSTNAME
          '''
             }
         }
@@ -19,7 +19,7 @@ pipeline {
                sh '''
             #!/bin/bash
             echo "hello world"
-            echo "$HOSTNAME"
+            $HOSTNAME
          '''
             }
         }
@@ -29,7 +29,7 @@ pipeline {
                 sh '''
             #!/bin/bash
             echo "hello world"
-            echo "$HOSTNAME"
+            $HOSTNAME
          '''
             }
         }
