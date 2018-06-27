@@ -5,19 +5,32 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo "$HOSTNAME"
+                
+            sh '''
+            #!/bin/bash
+            echo "hello world"
+            echo "$HOSTNAME"
+         '''
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                echo "$HOSTNAME"
+               sh '''
+            #!/bin/bash
+            echo "hello world"
+            echo "$HOSTNAME"
+         '''
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                echo "$HOSTNAME"
+                sh '''
+            #!/bin/bash
+            echo "hello world"
+            echo "$HOSTNAME"
+         '''
             }
         }
     }
