@@ -9,7 +9,7 @@ pipeline {
             sh '''
             #!/bin/bash
             echo "hello world"
-            $HOSTNAME
+            sleep 1m
          '''
             }
         }
@@ -19,7 +19,7 @@ pipeline {
                sh '''
             #!/bin/bash
             echo "hello world"
-            $HOSTNAME
+            sleep 2m
          '''
             }
         }
@@ -29,7 +29,7 @@ pipeline {
                 sh '''
             #!/bin/bash
             echo "hello world"
-            $HOSTNAME
+            sleep 5m
          '''
             }
         }
